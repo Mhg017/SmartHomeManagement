@@ -1,0 +1,19 @@
+﻿<Window x:Class="SmartHomeManagement.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Smart Home Management" Height="350" Width="525">
+    <Grid>
+        <Label Content="Device ID:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="DeviceIdTextBox" HorizontalAlignment="Left" Height="23" Margin="80,10,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Status:" HorizontalAlignment="Left" Margin="10,50,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="StatusComboBox" HorizontalAlignment="Left" Margin="80,50,0,0" VerticalAlignment="Top" Width="120">
+            <ComboBoxItem Content="Online"/>
+            <ComboBoxItem Content="Offline"/>
+            <ComboBoxItem Content="Maintenance"/>
+        </ComboBox>
+        <Button x:Name="AddDeviceButton" Content="Add Device" HorizontalAlignment="Left" Margin="250,10,0,0" VerticalAlignment="Top" Width="100" Click="AddDeviceButton_Click"/>
+        <Button x:Name="UpdateStatusButton" Content="Update Status" HorizontalAlignment="Left" Margin="250,50,0,0" VerticalAlignment="Top" Width="100" Click="UpdateStatusButton_Click"/>
+        <Button x:Name="RemoveDeviceButton" Content="Remove Device" HorizontalAlignment="Left" Margin="250,90,0,0" VerticalAlignment="Top" Width="100" Click="RemoveDeviceButton_Click"/>
+        <ListBox x:Name="DevicesListBox" HorizontalAlignment="Left" Height="200" Margin="10,130,0,0" VerticalAlignment="Top" Width="500"/>
+    </Grid>
+</Window>
